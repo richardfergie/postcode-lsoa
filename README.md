@@ -13,3 +13,5 @@ LSOA data from the census
 4. Load both data sets into saga-gis
 5. Perform spatial join
 6. Dump to CSV
+
+NB that the postcode location is given as a point when actually a postcode is a region (is this true? Perhaps a postcode is a collection of houses?). This makes it dead easy to say which LSOA a postcode is in because we never have to worry about a postcode that spans two or more LSOAs. But it does mean that things are not 100% accurate.
